@@ -1,6 +1,6 @@
 <div class="mt-4">
     <h2 class="fs-4 mb-4">Edit course</h2>
-    <form method="POST" action="/courses/store">
+    <form method="POST" action="/courses/{{course._id}}?_method=PUT">
       <div class="mb-3">
         <label for="name" class="form-label pe-5">Tên khóa học</label>
         <input type="input" class="form-control" id="name" name="name" value="{{course.name}}">
